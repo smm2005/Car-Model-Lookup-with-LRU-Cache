@@ -3,8 +3,8 @@ from node import Node
 
 class LRUCache:
     
-    def __init__(self):
-        self.linkedlist = DoublyLinkedList(capacity=10)
+    def __init__(self, c=10):
+        self.linkedlist = DoublyLinkedList(capacity=c)
         self.hashmap = {}
 
     def getList(self):
