@@ -2,6 +2,7 @@ from cache import LRUCache
 from node import Node 
 from doublylinkedlist import DoublyLinkedList
 import csv
+import time
 
 class CarModelFinder:
 
@@ -14,11 +15,12 @@ class CarModelFinder:
         car_cache = LRUCache()
         make = car_cache.search(self.ipt)
         try:
-            with open("models2024.csv") as csvfile:
+            with open("models/models2024.csv") as csvfile:
                 reader = csv.reader(csvfile, delimiter=",")
                 for row in reader:
                     if row[1] == make:
                         string += str(row[2]) + "\n"
+            
             return string
         except:
             return "ERROR: Car models for car make not found"
@@ -35,7 +37,5 @@ class CarModelFinder:
     def setInput(self, provided):
         self.year = provided
     
-while True:
-    prompt = input("Enter desired car make: ")
-    cmf = CarModelFinder(prompt)
-    print(cmf.find())
+cmf = CarModelFinder()
+print(cmf.find())
