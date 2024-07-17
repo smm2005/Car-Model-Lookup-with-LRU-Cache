@@ -23,7 +23,6 @@ class CarModelFinder:
                 for row in reader:
                     if row[1] == make:
                         string += str(row[2]) + "\n"
-            
             return string
         except:
             return "ERROR: Car models for car make not found"
