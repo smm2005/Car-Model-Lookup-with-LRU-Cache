@@ -20,7 +20,16 @@ class CarModelFinder:
                         string += str(row[2]) + "\n"
             return string
         except:
-            return "ERROR: Cars not found"
+            return "ERROR: Car models for car make not found"
+        
+    def getInput(self):
+        return self.ipt
     
+    def setInput(self, provided):
+        self.ipt = provided
+    
+prompt = input("Enter desired car make: ")
 cmf = CarModelFinder()
+if prompt != "":
+    cmf.setInput(prompt)
 print(cmf.find())
