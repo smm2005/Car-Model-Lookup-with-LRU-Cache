@@ -6,16 +6,19 @@ import time
 
 class CarModelFinder:
 
+    car_cache = LRUCache()
+    csv_cache = LRUCache(c=5)
+
     def __init__(self, ipt="Acura", year="2024"):
         self.ipt = ipt
         self.year = year
 
     def find(self):
         string = "Cars of Model: \n"
-        car_cache = LRUCache()
-        make = car_cache.search(self.ipt)
+        make = self.car_cache.search(self.ipt)
+        current_csv = self.csv_cache.search("models{}.csv".format(str(self.year)))
         try:
-            with open("models/models"+self.year+".csv") as csvfile:
+            with open("models/"+current_csv) as csvfile:
                 reader = csv.reader(csvfile, delimiter=",")
                 for row in reader:
                     if row[1] == make:
