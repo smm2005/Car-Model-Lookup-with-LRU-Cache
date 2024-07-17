@@ -15,11 +15,8 @@ class CarModelFinder:
 
     def find(self):
         make = self.car_cache.search(self.ipt)
-        current_csv = self.csv_cache.search("models{}.csv".format(str(self.year)))
-        try:
-            return self.load(current_csv, make)
-        except:
-            return "ERROR: Car models for car make not found"
+        func = self.csv_cache.search("self.load(\"models{}.csv\", \"{}\")".format(str(self.year), make))
+        exec(func)
         
     def load(self, file, car_make):
         string = "Cars of Model: \n"
@@ -28,7 +25,7 @@ class CarModelFinder:
             for row in reader:
                 if row[1] == car_make:
                     string += str(row[2]) + "\n"
-        return string
+        print(string)
         
     def getInput(self):
         return self.ipt
@@ -42,5 +39,5 @@ class CarModelFinder:
     def setInput(self, provided):
         self.year = provided
     
-cmf = CarModelFinder(year="2023")
-print(cmf.find())
+cmf = CarModelFinder(year="2024")
+cmf.find()
