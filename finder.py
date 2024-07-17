@@ -1,22 +1,23 @@
 from cache import LRUCache
-from node import Node
+from node import Node 
 from doublylinkedlist import DoublyLinkedList
 import csv
 
 class CarModelFinder:
 
-    def __init__(self, ipt="Acura"):
+    def __init__(self, ipt="Acura", year="2024"):
         self.ipt = ipt
+        self.year = year
 
     def find(self):
         string = "Cars of Model: \n"
         car_cache = LRUCache()
-        car_cache.search(self.ipt)
+        make = car_cache.search(self.ipt)
         try:
             with open("models2024.csv") as csvfile:
                 reader = csv.reader(csvfile, delimiter=",")
                 for row in reader:
-                    if row[1] == self.ipt:
+                    if row[1] == make:
                         string += str(row[2]) + "\n"
             return string
         except:
@@ -27,9 +28,14 @@ class CarModelFinder:
     
     def setInput(self, provided):
         self.ipt = provided
+
+    def getYear(self):
+        return self.year
     
-prompt = input("Enter desired car make: ")
-cmf = CarModelFinder()
-if prompt != "":
-    cmf.setInput(prompt)
-print(cmf.find())
+    def setInput(self, provided):
+        self.year = provided
+    
+while True:
+    prompt = input("Enter desired car make: ")
+    cmf = CarModelFinder(prompt)
+    print(cmf.find())

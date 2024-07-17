@@ -14,6 +14,7 @@ class LRUCache:
         return self.hashmap
 
     def search(self, ipt):
+        node = None
         key = self.linkedlist.retrieveKey(ipt)
         if key == -1:
             node = self.linkedlist.push(ipt)
@@ -23,8 +24,11 @@ class LRUCache:
                 self.linkedlist.popFirst()
             else:
                 self.linkedlist.deleteFirst(ipt)
-                node = self.linkedlist.push(ipt)
-                self.hashmap.update({key: node})
+            node = self.linkedlist.push(ipt)
+            self.hashmap.update({node.getKey(): node})
+        curr = self.hashmap[node.getKey()]
+        return curr.val
+        
 
 cachetest = LRUCache()
 cachetest.search("Potato")
