@@ -15,7 +15,7 @@ class CarModelFinder:
         car_cache = LRUCache()
         make = car_cache.search(self.ipt)
         try:
-            with open("models/models2024.csv") as csvfile:
+            with open("models/models"+self.year+".csv") as csvfile:
                 reader = csv.reader(csvfile, delimiter=",")
                 for row in reader:
                     if row[1] == make:
@@ -37,5 +37,5 @@ class CarModelFinder:
     def setInput(self, provided):
         self.year = provided
     
-cmf = CarModelFinder()
+cmf = CarModelFinder(year="2023")
 print(cmf.find())
