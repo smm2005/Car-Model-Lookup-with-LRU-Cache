@@ -10,7 +10,7 @@ def hello():
 @app.route("/result", methods=["POST"])
 def result():
     data = request.get_json()
-    cmf = CarModelFinder(data['makeValue'], data['yearValue'])
+    cmf = CarModelFinder(data['makeValue'].strip(), data['yearValue'].strip())
     cmf.find()
     string = cmf.getString()
     return string
