@@ -19,12 +19,12 @@ class CarModelFinder:
         exec(func)
         
     def load(self, file, car_make):
-        self.string = "Cars of Model: \n"
+        self.string = "Cars of Model: <br>"
         with open("webapp/models/"+file) as csvfile:
             reader = csv.reader(csvfile, delimiter=",")
             for row in reader:
                 if row[1] == car_make:
-                    self.string += str(row[2]) + "\n"
+                    self.string += str(row[2]) + "<br>"
         
     def getInput(self):
         return self.ipt
