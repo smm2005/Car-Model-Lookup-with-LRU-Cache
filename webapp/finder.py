@@ -19,7 +19,7 @@ class CarModelFinder:
         exec(func)
         
     def load(self, file, car_make):
-        self.string = "Cars of Model: <br>"
+        self.string = "Car Models: <br>"
         with open("webapp/models/"+file) as csvfile:
             reader = csv.reader(csvfile, delimiter=",")
             for row in reader:
