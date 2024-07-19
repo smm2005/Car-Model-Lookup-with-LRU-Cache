@@ -15,6 +15,5 @@ def result():
     string = cmf.getString()
     return string
 
-
 if __name__ == '__main__':
     app.run(debug=True)
