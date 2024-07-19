@@ -1,0 +1,61 @@
+#header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: block;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header line{
+    color: black;
+    size: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+#form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: block;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#years{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#labelForMake{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    left: 30px;
+}
+
+#make{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    left: 30px;
+}
+
+#submit{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 150px;
+    padding: 9px;
+    top: 35px;
+}
+
+#display{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+}
