@@ -59,4 +59,9 @@
     font-size: large;
     text-align: left;
     top: 100px;
+    left: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border-color: #000;
+    overflow-y: auto;
 }
