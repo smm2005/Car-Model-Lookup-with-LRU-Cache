@@ -39,7 +39,3 @@ class CarModelFinder:
 
     def getString(self):
         return self.string
-
-cmf = CarModelFinder("Acura", "2024")
-cmf.find()
-print(cmf.getString())

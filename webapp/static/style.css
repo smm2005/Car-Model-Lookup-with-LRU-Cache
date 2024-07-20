@@ -1,5 +1,6 @@
 #header{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: large;
     display: block;
     position: relative;
@@ -16,7 +17,8 @@
 }
 
 #form{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: large;
     display: block;
     position: relative;
@@ -26,27 +28,31 @@
 }
 
 #years{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: large;
 }
 
 #labelForMake{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: large;
     left: 30px;
 }
 
 #make{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: large;
     left: 30px;
 }
 
 #submit{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: 25px;
     width: 150px;
     padding: 9px;
@@ -55,7 +61,8 @@
 
 #display{
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
     font-size: large;
     text-align: left;
     top: 120px;

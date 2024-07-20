@@ -30,23 +30,6 @@ class LRUCache:
         return curr.val
         
 
-cachetest = LRUCache()
-cachetest.search("Potato")
-print(cachetest.getTable())
-cachetest.search("Potato")
-print(cachetest.getTable())
-cachetest.search("Potato")
-print(cachetest.getTable())
-cachetest.search("Apple")
-cachetest.search("Apple")
-cachetest.search("Vanilla")
-cachetest.search("Meringue")
-cachetest.search("Vanilla")
-cachetest.search("Apple")
-cachetest.search("Pizza")
-cachetest.search("Banana")
-print(cachetest.getList().string())
-
     
 
 

@@ -87,14 +87,3 @@ class DoublyLinkedList:
             curr = curr.next
         return string
             
-    
-dll = DoublyLinkedList(capacity=100)
-
-dll.push(1)
-dll.push(1)
-dll.push(3)
-dll.push(4)
-dll.push(5)
-dll.push(6)
-dll.popFirst()
-print(dll.string())
