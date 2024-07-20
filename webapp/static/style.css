@@ -66,3 +66,7 @@
     border-radius: 2%;
     overflow-y: auto;
 }
+
+#carModelTitle{
+    text-align: center;
+}
