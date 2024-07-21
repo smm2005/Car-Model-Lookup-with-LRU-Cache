@@ -7,6 +7,17 @@
     top: 20px;
     margin: 0 auto;
     text-align: center;
+    animation: anim 1s ease-out 1 both;
+}
+
+@keyframes anim{
+    from{
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #header line{

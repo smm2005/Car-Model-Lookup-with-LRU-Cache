@@ -23,7 +23,7 @@ class CarModelFinder:
             reader = csv.reader(csvfile, delimiter=",")
             for row in reader:
                 if row[1] == car_make:
-                    self.string += str(row[2]) + "<hr>"
+                    self.string += "&nbsp;&nbsp;"+ str(row[2]) + "<hr>"
         
     def getInput(self):
         return self.ipt
