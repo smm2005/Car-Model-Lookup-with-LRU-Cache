@@ -23,7 +23,11 @@ Then run the command
 
 Once this command runs, you will be in the directory with that name. To compile and execute the web application, run the following command:
 
-`python app.py`
+`python webapp/app.py`
+
+When this command runs, the following window will appear:
+
+![alt text](img/image.png)
 
 **COMPONENT**
 
