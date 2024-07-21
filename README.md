@@ -29,6 +29,10 @@ When this command runs, the following window will appear:
 
 ![alt text](img/image.png)
 
+To open the webapp from here, either hover over the link starting with (http:) and then hold the Control key + left click or copy the link and paste into a web browser.
+
+------------------------------------------------------------------------------------------
+
 **COMPONENT**
 
 Work In Progress
