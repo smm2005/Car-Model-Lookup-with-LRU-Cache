@@ -1,3 +1,7 @@
+body{
+    background-color: aliceblue;
+}
+
 #header{
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
@@ -7,6 +11,8 @@
     top: 20px;
     margin: 0 auto;
     text-align: center;
+    background-color: #002147;
+    color:antiquewhite;
     animation: anim 1s ease-out 1 both;
 }
 
@@ -42,6 +48,8 @@
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
     font-size: large;
+    border: none;
+    border-bottom: 2px solid black;
 }
 
 #labelForMake{
@@ -58,6 +66,8 @@
     font-weight: 400;
     font-size: large;
     left: 30px;
+    border: none;
+    border-bottom: 2px solid black;
 }
 
 #submit{
