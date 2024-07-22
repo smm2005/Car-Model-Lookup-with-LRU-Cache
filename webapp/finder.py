@@ -16,7 +16,10 @@ class CarModelFinder:
     def find(self):
         make = self.car_cache.search(self.ipt)
         func = self.csv_cache.search("self.load(\"models{}.csv\", \"{}\")".format(str(self.year), make))
-        exec(func)
+        try:
+            exec(func)
+        except:
+            self.string = "CARS NOT FOUND"
         
     def load(self, file, car_make):
         with open("webapp/models/"+file) as csvfile:
