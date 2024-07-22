@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
     text-align: center;
     background-color: #002147;
-    color:antiquewhite;
+    color:aliceblue;
     animation: anim 1s ease-out 1 both;
 }
 
@@ -75,6 +75,23 @@ body{
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
     font-size: 25px;
+    background-color: #002147;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    width: 150px;
+    padding: 9px;
+    top: 35px;
+    transition-duration: 0.4s;
+}
+
+#submit:hover{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: aliceblue;
+    color: #002147;
+    border: 2px solid #002147;
     width: 150px;
     padding: 9px;
     top: 35px;
