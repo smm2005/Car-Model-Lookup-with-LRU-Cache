@@ -2,11 +2,11 @@
 
 **SETUP**
 
-IF YOU HAVE GIT:
-
 This program makes use of Flask to run the application. If you do not have Flask installed already you can do so on your command line by entering the following command:
 
 `pip install flask`
+
+IF YOU HAVE GIT:
 
 Once Flask is installed onto your local machine, create a new folder where you can store the cloned folder of this repository.
 Once you created the new folder, right click and then select "Open in Terminal". The terminal will be in the directory with which you opened from.
