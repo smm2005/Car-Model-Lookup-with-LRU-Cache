@@ -62,6 +62,8 @@ https://github.com/abhionlyone/us-car-models-data
 
 The model CSVs go as far back as 25 years, dating from 1999.
 
+More importantly, I designed a doubly-linked list with a custom Node class and then used the aforementioned doubly-linked list in the LRU cache design. The doubly-linked list contains a capacity feature where nodes at the end of the list are evicted upon the appending of a new node to the list head. Despite the sequential access of a doubly-linked list, the list is useful as operations done on linked lists take up a space complexity of O(1) since the only changes occur with values already present in the linked list nodes.
+
 **USE OF LRU CACHE**
 
 Work In Progress
