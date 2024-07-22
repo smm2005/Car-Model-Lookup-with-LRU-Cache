@@ -54,7 +54,13 @@ To open the webapp from here, either hover over the link starting with (http:) a
 
 **COMPONENT**
 
-Work In Progress
+This webapp consists of Flask to facilitate back-end Python code to the front-end design made with HTML and CSS. In JavaScript, jQuery, more specifically AJAX, is used to handle communication between inputs handled by the HTML, CSS and JavaScript trio and the outputs processed by Python code, where the outputs are returned for display into the web application. Originally the car model finder was meant to be terminal line but seeing that website would serve as a more viable UI to look up car models based on the car make and car year I decided to use Flask to integrate the back-end code with the web development trio (HTML, CSS and JavaScript).
+
+The web application also takes advantage of car model CSVs separated on a yearly basis which I obtained from Abhilash Reddy's (abhionlyone) repository on yearly car data in the United States. The repository can be found in the link below:
+
+https://github.com/abhionlyone/us-car-models-data
+
+The model CSVs go as far back as 25 years, dating from 1999.
 
 **USE OF LRU CACHE**
 
