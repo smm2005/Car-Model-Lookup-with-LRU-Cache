@@ -66,4 +66,8 @@ More importantly, I designed a doubly-linked list with a custom Node class and t
 
 **USE OF LRU CACHE**
 
-Work In Progress
+What is an LRU Cache?
+
+An LRU Cache is an intermediate storage unit with a least recently used eviction policy (LRU) which holds values previously accessed from the memory by the user. The least recently used eviction policy ensures that values not accessed for a specific amount of calls to the memory are evicted from the cache. The usage of an LRU cache is useful in this scenario because calls to access the CSV files directly are memory intensive. The usage of a doubly linked list as well as a hashmap solves the issue of high memory-intensive usage and ensures quicker retrieval of makes and function calls previously accessed by the user.
+
+For this repository, I applied an LRU cache into the car make input and the function calls to loading strings of car models based on the year denoted in the CSV file. 
