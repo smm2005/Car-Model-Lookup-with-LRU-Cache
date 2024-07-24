@@ -18,6 +18,8 @@ class CarModelFinder:
         func = self.csv_cache.search("self.load(\"models{}.csv\", \"{}\")".format(str(self.year), make))
         try:
             exec(func)
+            if self.string == "":
+                self.string = "CARS NOT FOUND"
         except:
             self.string = "CARS NOT FOUND"
         
