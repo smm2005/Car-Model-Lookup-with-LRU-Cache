@@ -6,6 +6,8 @@ This program makes use of Flask to run the application. If you do not have Flask
 
 `pip install flask`
 
+------------------------------------------------------------------------------------------
+
 IF YOU HAVE GIT:
 
 Once Flask is installed onto your local machine, create a new folder where you can store the cloned folder of this repository.
@@ -51,6 +53,7 @@ When this command runs, the following window will appear:
 
 To open the webapp from here, either hover over the link starting with (http:) and then hold the Control key + left click or copy the link and paste into a web browser.
 
+------------------------------------------------------------------------------------------
 
 **COMPONENT**
 
@@ -64,6 +67,8 @@ The model CSVs go as far back as 25 years, dating from 1999.
 
 More importantly, I designed a doubly-linked list with a custom Node class and then used the aforementioned doubly-linked list in the LRU cache design. The doubly-linked list contains a capacity feature where nodes at the end of the list are evicted upon the appending of a new node to the list head. Despite the sequential access of a doubly-linked list, the list is useful as operations done on linked lists take up a space complexity of O(1) since the only changes occur with values already present in the linked list nodes.
 
+------------------------------------------------------------------------------------------
+
 **USE OF LRU CACHE**
 
 What is an LRU Cache?
@@ -71,6 +76,8 @@ What is an LRU Cache?
 An LRU Cache is an intermediate storage unit with a least recently used eviction policy (LRU) which holds values previously accessed from the memory by the user. The least recently used eviction policy ensures that values not accessed for a specific amount of calls to the memory are evicted from the cache. The usage of an LRU cache is useful in this scenario because calls to access the CSV files directly are memory intensive. The usage of a doubly linked list as well as a hashmap solves the issue of high memory-intensive usage and ensures quicker retrieval of makes and function calls previously accessed by the user.
 
 For this repository, I applied an LRU cache into the car make input and the function calls to loading strings of car models based on the year denoted in the CSV file. 
+
+------------------------------------------------------------------------------------------
 
 **SCREENSHOTS**
 
