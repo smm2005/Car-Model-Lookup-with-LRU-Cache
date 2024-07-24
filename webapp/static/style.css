@@ -8,7 +8,8 @@ body{
     font-size: large;
     display: block;
     position: relative;
-    top: 20px;
+    padding: 5px;
+    border: 5px solid #002147;
     margin: 0 auto;
     text-align: center;
     background-color: #002147;
