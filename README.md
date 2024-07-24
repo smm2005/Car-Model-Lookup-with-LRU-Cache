@@ -27,7 +27,7 @@ Once this command runs, you will be in the directory with that name. To compile 
 
 When this command runs, the following window will appear:
 
-![alt text](img/image.png)
+![Terminal Line Image](img/image.png)
 
 To open the webapp from here, either hover over the link starting with (http:) and then hold the Control key + left click or copy the link and paste into a web browser.
 
@@ -47,7 +47,7 @@ Run the following command in the terminal
 
 When this command runs, the following window will appear:
 
-![alt text](img/image.png)
+![Terminal Line Image](img/image.png)
 
 To open the webapp from here, either hover over the link starting with (http:) and then hold the Control key + left click or copy the link and paste into a web browser.
 
@@ -71,3 +71,15 @@ What is an LRU Cache?
 An LRU Cache is an intermediate storage unit with a least recently used eviction policy (LRU) which holds values previously accessed from the memory by the user. The least recently used eviction policy ensures that values not accessed for a specific amount of calls to the memory are evicted from the cache. The usage of an LRU cache is useful in this scenario because calls to access the CSV files directly are memory intensive. The usage of a doubly linked list as well as a hashmap solves the issue of high memory-intensive usage and ensures quicker retrieval of makes and function calls previously accessed by the user.
 
 For this repository, I applied an LRU cache into the car make input and the function calls to loading strings of car models based on the year denoted in the CSV file. 
+
+**SCREENSHOTS**
+
+![Basic Website Layout](img/layout1.png)
+
+Car model output with valid points
+
+![Car Model Output with Valid Inputs](img/layout2.png)
+
+Car model output with invalid inputs
+
+![Car Model Output with Invalid Inputs](img/layout3.png)
